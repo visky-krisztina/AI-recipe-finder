@@ -1,0 +1,97 @@
+.search-bar {
+	width: 400px;
+	height: 40px;
+	position: relative;
+	margin-bottom: 16px;
+}
+
+.search-input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	font-family: "Outfit", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: left;
+}
+
+.search-input::placeholder {
+	position: absolute;
+	color: #1e1e1e;
+	left: 20px;
+	opacity: 1;
+}
+
+.icon {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.clear-btn {
+	width: 16px;
+	height: 16px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.favorite-btn {
+	background-color: transparent;
+	border: none;
+}
+.favorited-icon,
+.not-favorited-icon {
+	width: 14px;
+	height: 14px;
+}
+.favorited-icon {
+	color: #65558f;
+}
+
+.loading-spinner {
+	display: flex;
+	justify-content: center;
+	margin: 1rem 0;
+	color: #65558f;
+	font-weight: 800;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets */
+@media (max-width: 768px) {
+	.search-bar {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.search-bar input {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.search-bar button {
+		width: 100%;
+	}
+	.clear-btn {
+		left: 50%;
+	}
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+	.search-bar {
+		width: 80%;
+		margin-bottom: 0.2rem;
+	}
+
+	.search-bar button {
+		font-size: 14px;
+	}
+}
